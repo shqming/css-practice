@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .outer {
+            height: 100vh;
+            display: flex;
+
+        }
+ 
+        .outer div {
+            flex: 1;
+            background: blue;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .outer div img {
+            /* display: block; */
+            width: 100vw;
+            height: 100vh;
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .outer div:nth-child(2) img {
+            left: -20vw;
+        }
+
+        .outer div:nth-child(3) img {
+            left: -40vw;
+        }
+
+        .outer div:nth-child(4) img {
+            left: -60vw;
+        }
+
+        .outer div:nth-child(5) img {
+            left: -80vw;
+        }
+
+        .outer div {
+            transition-duration: 1s;
+
+        }
+
+        .outer:hover div {
+            transform: translateY(-100vh);
+        }
+
+        div.outer .box2 {
+            transition-delay: .2s;
+        }
+
+        div.outer .box3 {
+            transition-delay: .4s;
+        }
+
+        div.outer .box4 {
+            transition-delay: .6s;
+        }
+
+        div.outer .box5 {
+            transition-delay: .8s;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="outer">
+        <div class="inner"></div>
+        <div class="inner"></div>
+    </div> -->
+
+    <div class="outer">
+        <div class="box1">
+            <img src="img11.jpg" alt="">
+        </div>
+        <div class="box2">
+            <img src="img11.jpg" alt="">
+        </div>
+        <div class="box3">
+            <img src="img11.jpg" alt="">
+        </div>
+        <div class="box4">
+            <img src="img11.jpg" alt="">
+        </div>
+        <div class="box5">
+            <img src="img11.jpg" alt="">
+        </div>
+
+    </div>
+</body>
+
+</html>
