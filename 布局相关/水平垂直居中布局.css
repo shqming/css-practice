@@ -1,0 +1,40 @@
+/*方式一：position:absolute*/
+div.parent{
+    position: relative;
+}
+div.child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+/* */
+div.parent{
+    position: relative;
+}
+div.child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/* 方式二-flex */
+div.parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+/* 方式三：display: table-cell */
+div.parent{
+    display: table-cell;
+    vertical-align: middle;
+}
+div .child { 
+    display: block;
+    margin: 0 auto;
+}
